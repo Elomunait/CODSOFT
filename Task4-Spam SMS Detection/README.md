@@ -72,4 +72,4 @@ Feel free to contribute to this project. Create issues for bug reports or featur
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/Elomunait/CODSOFT/blob/main/LICENSE)https://github.com/Elomunait/CODSOFT/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/Elomunait/CODSOFT/blob/main/LICENSE).
