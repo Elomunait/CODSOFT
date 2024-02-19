@@ -26,8 +26,8 @@ This project aims to build a model for detecting fraudulent credit card transact
 1. Clone the repository:
 
 ```
-   git clone https://github.com/your-username/credit-card-fraud-detection.git
-   cd credit-card-fraud-detection
+   git clone https://github.com/Elomunait/CODSOFT/tree/main/Task2-CREDIT_CARD_FRAUD_DETECTION
+   cd Task2-CREDIT_CARD_FRAUD_DETECTION
    ```
 
 2. Install the required dependencies:
