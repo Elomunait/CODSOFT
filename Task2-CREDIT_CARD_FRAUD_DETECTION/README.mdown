@@ -1,0 +1,91 @@
+# Task 2: Credit Card Fraud Detection
+
+## Overview
+This project aims to build a model for detecting fraudulent credit card transactions using machine learning algorithms. The dataset contains information about credit card transactions, and the goal is to classify transactions as either fraudulent or legitimate. We explore various features, preprocess the data, and train a RandomForestClassifier to make predictions.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Libraries and Tools](#libraries-and-tools)
+- [Data](#data)
+  - [Dataset Overview](#dataset-overview)
+  - [Data Preprocessing](#data-preprocessing)
+  - [Feature Engineering](#feature-engineering)
+- [Modeling](#modeling)
+  - [Evaluation Metrics and Visualization](#evaluation-metrics-and-visualization)
+  - [Test Set Evaluation](#test-set-evaluation)
+- [Usage](#usage)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+
+```
+   git clone https://github.com/your-username/credit-card-fraud-detection.git
+   cd credit-card-fraud-detection
+   ```
+
+2. Install the required dependencies:
+
+```
+   pip install -r requirements.txt
+   ```
+
+### Libraries and Tools
+- [Scikit-learn](https://scikit-learn.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Seaborn](https://seaborn.pydata.org/)
+- [Plotly Express](https://plotly.com/python/)
+
+## Data
+
+### Dataset Overview
+The dataset used for training and evaluation consists of credit card transactions. It includes features such as transaction date, credit card number, merchant details, transaction amount, and whether the transaction is fraudulent or not. The goal is to build a model that can accurately classify transactions.
+
+### Data Preprocessing
+- Checked for missing values and handled duplicates.
+- Converted date-related columns to datetime format and extracted additional features.
+- Calculated distances using the Haversine formula.
+- Visualized data distributions and analyzed features.
+
+### Feature Engineering
+- Converted categorical features to numerical labels using OrdinalEncoder.
+- Applied label encoding to low cardinality columns and frequency encoding to high cardinality columns.
+- Utilized PCA for dimensionality reduction.
+
+## Modeling
+- Split the dataset into training and validation sets.
+- Utilized a RandomForestClassifier with default parameters for initial modeling.
+- Conducted cross-validation and hyperparameter tuning using RandomizedSearchCV.
+
+### Evaluation Metrics and Visualization
+- Plotted ROC and Precision-Recall curves.
+- Used various evaluation metrics such as accuracy, precision, recall, and F1-score.
+
+### Test Set Evaluation
+- Applied the trained model to the test set.
+- Saved the results to a CSV file, including the probability of fraud and predicted fraud labels.
+- Displayed the classification report and confusion matrix for the test set.
+- Saved the best model using joblib.
+
+## Files and Directory Structure
+- `CreditCardFraudDetection.ipynb`: Jupyter Notebook containing the complete code and analysis.
+- `PredictFraud_Result.csv`: CSV file containing the results of the model on the provided test set.
+- `best_rf_model.joblib`: Saved model file.
+
+## Usage
+1. Open `CreditCardFraudDetection.ipynb` to view the complete code and analysis.
+2. Execute the cells in the notebook to reproduce the model building process.
+3. The trained model is saved as `best_rf_model.joblib` for future use.
+4. Results on the provided test set are available in `PredictFraud_Result.csv`.
+
+## Acknowledgments
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Elomunait/CODSOFT/blob/main/LICENSE) file for details.
