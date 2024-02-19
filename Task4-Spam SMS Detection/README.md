@@ -27,7 +27,7 @@ The original dataset can be found on the [UCI Machine Learning Repository](https
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/SMS-Spam-Detection.git
+git clone https://github.com/Elomunait/CODSOFT/tree/main/Task4-Spam%20SMS%20Detection
 ```
 
 2. Install the required dependencies:
