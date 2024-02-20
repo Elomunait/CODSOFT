@@ -1,0 +1,107 @@
+# Movie Genre Classification
+
+Author: Elomunait John Omoding
+
+## Overview
+
+This machine learning project aims to predict the genre of a movie based on its plot summary using various natural language processing (NLP) techniques and machine learning algorithms. Techniques such as TF-IDF (Term Frequency-Inverse Document Frequency) are employed, along with classifiers like Naive Bayes, Logistic Regression, or Support Vector Machines (SVM), to build an accurate genre classification model.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Dataset](#dataset)
+- [Data Preprocessing](#data-preprocessing)
+- [Model Training](#model-training)
+- [Model Evaluation](#model-evaluation)
+- [Optimization](#optimization)
+- [Results](#results)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/your-repo.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd your-repo
+    ```
+
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. Ensure you have the required dataset and update the file paths in the notebook accordingly.
+2. Open the `MOVIE_GENRE_CLASSIFICATION.ipynb` notebook.
+3. Run each cell in the notebook sequentially.
+
+## Project Structure
+
+```
+├── MOVIE_GENRE_CLASSIFICATION.ipynb
+├── README.md
+├── requirements.txt
+├── data
+│   ├── train_data.txt
+│   └── test_data.txt
+├── results
+│   └── test_data_predicted.csv
+```
+
+## Dependencies
+
+- scikit-optimize
+- scikit-learn
+- nltk
+- numpy
+- pandas
+- matplotlib
+- seaborn
+
+## Dataset
+
+The dataset is divided into training (`train_data.txt`) and testing (`test_data.txt`) sets, containing movie titles, genres, and plot descriptions.
+
+## Data Preprocessing
+
+The dataset is loaded and cleaned, including removing null values and performing text cleaning operations on the plot descriptions. The distribution of genres in the training data is visualized.
+
+## Model Training
+
+The TF-IDF vectorizer is used to convert text data into numerical format. A Multinomial Naive Bayes classifier is trained on the training data.
+
+## Model Evaluation
+
+The model's performance is evaluated on both the training and test sets, providing accuracy and a classification report.
+
+## Optimization
+
+Bayesian optimization is applied to optimize hyperparameters for the Multinomial Naive Bayes model.
+
+## Results
+
+The optimized model is evaluated on the test set, providing improved accuracy and a detailed classification report. The results are saved to a CSV file (`test_data_predicted.csv`).
+
+## Future Enhancements
+
+Possible future enhancements include exploring additional algorithms, fine-tuning hyperparameters further, and incorporating advanced NLP techniques.
+
+## Contributing
+
+If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
